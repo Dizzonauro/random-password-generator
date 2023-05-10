@@ -51,9 +51,10 @@ body{
   opacity: .8;
 }
 
-.btn-container {
+.btn-trash-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -75,7 +76,7 @@ body{
   transform: scale(1.05);
 }
 
-.alert-container {
+.active-alert-container {
   position: fixed;
   width: 300px;
   height: 50px;
@@ -90,6 +91,17 @@ body{
   font-size: 20px;
 }
 
-.active.alert-container {
-  right: -300px;
+.fa-trash-can {
+  position: relative;
+  right: -160px;
+}
+
+.fa-trash-can:hover {
+  cursor: pointer;
+}
+
+.alert-container {
+  position: fixed;
+  bottom: -300px;
+  color: transparent;
 }
